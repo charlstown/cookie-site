@@ -1,4 +1,4 @@
-# Cookie Template
+# Cookie Site
 
 [![mkdocs](https://img.shields.io/badge/mkdocs-1.4-blue)](https://www.mkdocs.org/)
 [![template](https://img.shields.io/badge/template-material-dd2e57)](https://squidfunk.github.io/mkdocs-material/)
@@ -25,8 +25,8 @@ This template includes all the essential features you need to create a website t
 
 <details><summary><b>Readme contents</b></summary>
 
-- [Cookie Template](#cookie-template)
-  - [1. What is Cookie Template](#1-what-is-cookie-template)
+- [Cookie Site](#cookie-site)
+  - [1. What is Cookie Site](#1-what-is-cookie-site)
   - [1.1 What is cookiecutter](#11-what-is-cookiecutter)
   - [1.2 Repository contents](#12-repository-contents)
 - [2. Installation](#2-installation)
@@ -48,7 +48,7 @@ This template includes all the essential features you need to create a website t
 
 ---
 
-## 1. What is Cookie Template
+## 1. What is Cookie Site
 
 This is a modern and clean template for MkDocs, built using the Material Design framework. The template is fully responsive and mobile-friendly, making it easy to view your content on any device. It's also easy to customize and extend, so you can make it your own.
 
@@ -67,7 +67,7 @@ GitHub: https://github.com/cookiecutter/cookiecutter
 ## 1.2 Repository contents
 
 ```
-cookie-template                           -> Project directory.
+cookie-site                           -> Project directory.
 ├── cookiecutter.json                   -> Cookiecutter values.
 ├── {{cookiecutter.repository_name}}    -> Cookiecutter template.
 │   └── ...
@@ -151,7 +151,7 @@ To generate a custom project from the template, follow these steps:
 1. Navigate to the path where you desire to generate the project folder.
 2. Run the cookiecutter command followed by the repository URL.
   ```
-  python -m cookiecutter https://github.com/charlstown/cookie-template.git
+  python -m cookiecutter https://github.com/charlstown/cookie-site.git
   ```
 3. Fill out the form in the console and the project will be generated at the end.
 
