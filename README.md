@@ -155,7 +155,7 @@ To generate a custom project from the template, follow these steps:
   ```
 3. Fill out the form in the console and the project will be generated at the end.
 
-:fireworks::raised_hands: Congrats!! you have your project set and ready to roll.
+**:fireworks::raised_hands: Congrats!! you have your project set and ready to roll.**
 
 </br>
 
@@ -172,6 +172,8 @@ Remember that if you didn't set the pypi as trusted host globally in the previou
 ```
 pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org -r requirements.txt
 ```
+
+
 ## 3.2 Test run
 
 After setting up the template, you can do a test run.
@@ -183,12 +185,51 @@ mkdocs serve -w overrides/
 
 You may add the flag '-a localhost:8080' to select a custom local port.
 
+## 3.3  Adding the project to a new Github repository
+
+- **Step 1: Create a new repository in github:**
+
+  Create the new repository and make sure you give it the same name of the project folder, in our case my-python-project.
+
+  > **Warning**
+  > Don't add any predefined file from github in the new repository, all the files are included in the local project folder.
+
+- **step 2: Push the local repository:**
+
+  ```
+  git remote add origin {{LINK TO YOUR EMPTY REPO}}
+  git branch -M main
+  git push -u origin main
+  ```
 
 ## 3.3 Starting to code your project
 
-We recommend starting coding your project with these tips:
+To start coding your project we recommend to understand the project structure.
+```
+my-cool-site/                   -> Project directory
+├── mkdocs.yml                  -> MkDocs configuration file
+├── docs/                       -> Pages and site content
+│   ├── about/                  -> About section with pages
+│   ├── assets/                 -> Global assets for the site
+│   │   ├── images              -> Global images for the site
+│   │   ├── javascripts         -> Global javascripts for the site
+│   │   └── stylesheets         -> Global CSS styles for the site
+│   ├── getting-started.md      -> Getting started page
+│   └── index.md                -> Home page
+├── overrides/                  -> HTML to override material theme
+│   ├── home.html               -> HTML for the home page
+│   └── main.html               -> HTML for all pages
+├── README.md                   -> README file.
+├── code_of_conduct.md          -> Code of conduct file
+├── contributing.md             -> Contributing file
+├── LICENSE                     -> LICENSE file
+└── requirements.txt            -> Requirements to run the project
+...
+```
 
-CONTENT
+### Understand the project structure
+
+
 
 </br>
 
