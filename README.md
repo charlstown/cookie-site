@@ -189,7 +189,7 @@ You may add the flag '-a localhost:8080' to select a custom local port.
 
 - **Step 1: Create a new repository in github:**
 
-  Create the new repository and make sure you give it the same name of the project folder, in our case my-python-project.
+  Create the new repository and make sure you give it the same name of the project folder, in our case my-cool-site.
 
   > **Warning**
   > Don't add any predefined file from github in the new repository, all the files are included in the local project folder.
