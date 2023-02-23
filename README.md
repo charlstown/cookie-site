@@ -224,7 +224,6 @@ my-cool-site/                   -> Project directory
 ├── contributing.md             -> Contributing file
 ├── LICENSE                     -> LICENSE file
 └── requirements.txt            -> Requirements to run the project
-...
 ```
 
 ### Understand the project structure
