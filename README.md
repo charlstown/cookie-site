@@ -1,4 +1,4 @@
-# Site Template
+# Cookie Template
 
 [![mkdocs](https://img.shields.io/badge/mkdocs-1.4-blue)](https://www.mkdocs.org/)
 [![template](https://img.shields.io/badge/template-material-dd2e57)](https://squidfunk.github.io/mkdocs-material/)
