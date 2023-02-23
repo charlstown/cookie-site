@@ -122,7 +122,7 @@ To Verify the installation you can follow this steps.
 - **Install cookiecutter:**
 
   Installing cookiecutter package is very easy, you can simply run the next command to install it.
-  ```
+  ```bash
   python -m pip install cookiecutter
   ```
 
@@ -150,7 +150,7 @@ To generate a custom project from the template, follow these steps:
 
 1. Navigate to the path where you desire to generate the project folder.
 2. Run the cookiecutter command followed by the repository URL.
-  ```
+  ```bash
   python -m cookiecutter https://github.com/charlstown/cookie-site.git
   ```
 3. Fill out the form in the console and the project will be generated at the end.
@@ -164,7 +164,7 @@ To generate a custom project from the template, follow these steps:
 ## 3.1 Install the requirements
 
 You can install the requirements for the project by running the command
-```
+```bash
 pip install -r requirements.txt
 ```
 
@@ -179,7 +179,7 @@ pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-hos
 After setting up the template, you can do a test run.
 
 Serve the site locally running this command.
-```
+```bash
 mkdocs serve -w overrides/
 ```
 
@@ -196,7 +196,7 @@ You may add the flag '-a localhost:8080' to select a custom local port.
 
 - **step 2: Push the local repository:**
 
-  ```
+  ```bash
   git remote add origin {{LINK TO YOUR EMPTY REPO}}
   git branch -M main
   git push -u origin main
