@@ -1,0 +1,195 @@
+/* Global CSS */
+
+hr {
+    border: 0;
+    box-sizing: initial;
+    display: block;
+    height: 0.05rem;
+    overflow: visible;
+    padding: 0;
+    border-bottom: 0.05rem solid var(--md-default-fg-color--lightest);
+    display: flow-root;
+    margin: 2em 0;
+  }
+  
+  .highlighted {
+    color: var(--md-accent-fg-color);
+    font-weight: bold;
+  }
+  
+  .text-custom-color {
+    color: var(--md-accent-fg-color)!important;
+  }
+  
+  .image-border {
+    border-radius: 1rem;
+    border: 0.1rem solid var(--md-default-fg-color--lightest);
+  }
+  
+  .steps ul {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .steps li::before {
+  content: counter(item);
+  background-color: var(--md-default-fg-color--lightest);
+  border: 0px solid black;
+  border-radius: 100%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: black;
+  font-size: .7rem;
+  }
+  
+  .steps li {
+    counter-increment: item;
+    margin-bottom: 1rem!important;
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .unit {
+    justify-content: left;
+    display: grid;
+    grid-gap: 1rem;
+    margin: 0.5rem 0;
+    padding-bottom: 0.4rem;
+  }
+  
+  .unit ul {
+    display: contents!important;
+  }
+  
+  .unit ul hr {
+    height: 10px;
+  }
+  
+  .unit > ul > li {
+    list-style: none;
+    text-align: left;
+    padding: 0.8rem;
+    border: 0.05rem solid var(--md-default-fg-color--lightest);
+    border-radius: 0.1rem;
+    display: block;
+    transition: border .25s,box-shadow .25s;
+    height: 100%;
+    position: relative;
+    margin-left: 0!important;
+  }
+  
+  .output {
+  width: 200px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 15px;
+  display: block;
+  margin: 0;
+  padding: .7em .7em;
+  width: auto;
+  color: grey;
+  font-style: italic;
+  font-family: var(--md-code-font-family);
+  font-size: .85em;
+  }
+  
+  div.output::before {
+  content: "Output:";
+  display: block;
+  margin-bottom: 10px;
+  font-size: small;
+  }
+  
+  /* Classes to create grids and cards embeded in the markdown (extension md_in_html needed) */
+  .cards {
+  justify-content: center;
+  display: grid;
+  grid-gap: 0.4rem;
+  margin: 0.5rem 0;
+  }
+  
+  .img-max-height {
+    max-height: 450px!important;
+  }
+  
+  .row-1 {
+    grid-template-columns: none!important;
+    }
+  
+  .row-2 {
+  grid-template-columns: repeat(2, minmax(8rem, 1fr));
+  }
+  
+  .row-auto {
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  }
+  
+  .cards ul {
+  display: contents!important;
+  }
+  
+  .cards ul li {
+  list-style: none;
+  text-align: left;
+  padding: 0.8rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.1rem;
+  display: block;
+  transition: border .25s,box-shadow .25s;
+  height: 100%;
+  position: relative;
+  }
+  
+  .cards p:nth-last-child(2) {
+  margin-bottom: 1rem;
+  }
+  
+  .cards ul p:has(a) {
+  bottom: 0;
+  }
+
+  .cards a {
+    margin-bottom: 10px;
+  }
+  
+  .cards hr {
+  margin: 0.3rem 0;
+  }
+  
+  .cards ul li:hover {
+  border-color: #0000;
+  box-shadow: var(--md-shadow-z2);
+  }
+  
+  .grid {
+  grid-gap: 0.4rem;
+  display: grid;
+  margin: 1em 0;
+  }
+  
+  .grid ul {
+  display: contents!important;
+  list-style: none;
+  }
+  
+  /* .grid ul li a {
+  list-style: none;
+  text-align: left;
+  padding: 0.8rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.1rem;
+  display: block;
+  transition: border .25s, color .25s;
+  }
+  
+  .grid ul li a:hover {
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color);
+  } */

@@ -1,58 +1,66 @@
-site_name: Gluon Community
-site_description: Gluon Community portal with resources, support, and a platform for engagement and collaboration among members.
-repo_url: https://github.com/charlstown/gluon-community-portal
-site_author: Gluon Community
+site_name: CookieDocs
+site_description: Create your documentation site in a few minutes
+repo_url: https://github.com/charlstown/cookie-site.git
 
 # Configuration
 # Theme
 theme:
   name: material
-  custom_dir: overrides
-  # 404 page
-  static_templates:
-    - 404.html
   logo: assets/images/favicon.svg
   favicon: assets/images/favicon.svg
+  custom_dir: overrides
+  static_templates:
+    - 404.html
   font:
     text: Roboto
     code: Roboto Mono
   features:
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.sections
+    - navigation.path # Path rendered on the upper side
+    - navigation.tracking # URL in the address bar is automatically updated with the active anchor in the table of contents.
+    - navigation.tabs # Top-level sections are rendered in a menu layer below the header for viewports above
+    #- navigation.sections # top-level sections are rendered as groups in the sidebar for viewports above
+    - navigation.tabs # Documents can be directly attached to sections
     - navigation.footer
-    - navigation.top
-    - toc.integrate
+    - navigation.top # A back-to-top button can be shown when the user, after scrolling down, starts to scroll up again
+    #- toc.integrate # Table of contents is always rendered as part of the navigation sidebar on the left.
     - search.suggest
-    - search.highlight 
+    - search.highlight
+    - content.code.copy # Codeblocks
+    - content.tabs.link
+    - navigation.indexes # Documents attached to sections
   language: en
 
   # Color palette
   palette: 
     # Palette toggle for light mode
     - scheme: default
-      # primary: red
-      # accent: red
+      primary: blue grey
+      accent: teal
       toggle:
-        icon: material/brightness-7 
+        icon: material/toggle-switch
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - scheme: slate
-      primary: red
-      accent: red
+      primary: blue grey
+      accent: teal
       toggle:
-        icon: material/brightness-4
+        icon: material/toggle-switch-off-outline
         name: Switch to light mode
 
 
 # Sorting menu pages
 nav:
     - Home: 'index.md'
-    - Getting started: 'getting-started.md' # getting started
-    - Gluon learning: https://github.alm.europe.cloudcenter.corp/pages/cib-gluon/gluon-learning-portal/ # gluon learning
+    - User Guide:
+      - Getting Started: 'user-guide/getting-started.md'
+      - Set Up: 'user-guide/set-up.md'
+      - Usage: 'user-guide/usage.md'
+      - Help wanted: 'user-guide/help.md'
+    - Dev Guide:
+      - Contribute: 'dev-guide/contribute.md'
+      - CI CD: 'dev-guide/ci-cd.md'
     - About:
-      - Community Ecosystem: 'about/community-ecosystem.md'
       - License: 'about/license.md'
       - External links: 'about/external-links.md'
       - Changelog: 'about/changelog.md'
@@ -60,22 +68,25 @@ nav:
 
 # Extensions
 markdown_extensions:
+  - toc:
+      permalink: true
   - admonition            # Block elements
   - pymdownx.details      # Collapsible call-outs
   - pymdownx.superfences  # Nested elements
   - pymdownx.mark         # Hihlighting text
   - attr_list             # To add buttons
   - md_in_html            # To add html in markdown (centred images)
-  - pymdownx.critic       # To highlight text in markdown
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
 
 # Plugins
 plugins:
   - search
   - markdownextradata
-# css
+
+  # css
 extra_css:
   - assets/stylesheets/extra.css
 
@@ -84,10 +95,4 @@ extra_javascript:
   - assets/javascripts/extra.js
 
 # Copyright message
-copyright: Copyright &copy; Grupo Santander - Gluon 2023
-
-# Global variables
-extra:
-  links:
-    self-host: 'https://github.alm.europe.cloudcenter.corp/pages/cib-gluon/gluon-community-portal/'
-    learning-host: 'https://github.alm.europe.cloudcenter.corp/pages/cib-gluon/gluon-learning-portal/'
+copyright: Copyright &copy; batcueva - 2023
