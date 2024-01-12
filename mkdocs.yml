@@ -63,7 +63,6 @@ nav:
     - About:
       - License: 'about/license.md'
       - External links: 'about/external-links.md'
-      - Changelog: 'about/changelog.md'
 
 
 # Extensions
