@@ -122,9 +122,9 @@ Deploy your documentation in Github pages is so easy, you only need to set the p
 2. Select `Pages` at the settings menu under the `code and automation` section.
 3. Make sure pages is enable and select `gh-pages` as the site branch under `Build and deployment` section.
 
-    ![gh-pages settings](../assets/captures/gs-ghpages-settings.png)
+    ![gh-pages settings](/assets/images/captures/gs-ghpages-settings.png)
 
-     Your site should be live at: https://charlstown.github.io/my-python-project/
+     Your site should be live at: `https://youruser.github.io/my-python-project/``
 
 
 
