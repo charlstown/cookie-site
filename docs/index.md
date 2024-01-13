@@ -41,7 +41,7 @@ Congrats! :fireworks: You finally generated your own Documentation Site! Visit t
 
 <br>
 
-[User Guide](https://github.com/charlstown/py-template.git){ .md-button }
+[Get Started!](user-guide/getting-started/){ .md-button }
 
 
 ## Documentation contents
