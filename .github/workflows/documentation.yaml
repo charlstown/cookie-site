@@ -40,5 +40,5 @@ jobs: # Jobs to run
             python -m pip install --upgrade pip
             pip install -r requirements.txt
         - name: Deploy documentation # Name of the step
-          run: python -m mkdocs gh-deploy --clean --force --verbose # Command to run
+          run: python -m mkdocs gh-deploy --clean --verbose # Command to run
           
