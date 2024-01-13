@@ -38,9 +38,7 @@ jobs: # Jobs to run
         - name: Install dependencies # Name of the step
           run: | # Command to run
             python -m pip install --upgrade pip
-            pip install mkdocs
-            pip install mkdocs-material
-            pip install pymdown-extensions
+            pip install -r requirements
         - name: Deploy documentation # Name of the step
           run: python -m mkdocs gh-deploy --clean --force --verbose # Command to run
           
