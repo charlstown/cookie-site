@@ -31,7 +31,7 @@ jobs: # Jobs to run
           with: # Inputs for the action
             python-version: 3.10 # Version of Python to use
         - name: Caching # Name of the step
-          uses: actions/cache@v5 # Action to run
+          uses: actions/cache@v3 # Action to run
           with: # Inputs for the action
             path: $/{/{ env.pythonLocation /}/} # Path to cache
             key: $/{/{ env.pythonLocation /}/}-$/{/{ hashFiles('setup.py') /}/}-$/{/{ hashFiles('requirements.txt') /}/} # Key to use for restoring and saving the cache
