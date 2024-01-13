@@ -43,3 +43,4 @@ jobs: # Jobs to run
             pip install pymdown-extensions
         - name: Deploy documentation # Name of the step
           run: mkdocs gh-deploy --clean --force --verbose # Command to run
+          
