@@ -54,7 +54,7 @@ Congrats! :fireworks: You finally generated your own Documentation Site! Visit t
 
     If you want to simply create a documentation site as a user you can visit the User Guide to learn how to get started, set up and use this template.
 
-    [:octicons-arrow-right-24: Visit the guide](nav-recursos-digitales)
+    [:octicons-arrow-right-24: Visit the guide](user-guide/getting-started/)
 
 - :fontawesome-regular-file-code: **Dev Guide**  
 
@@ -62,7 +62,7 @@ Congrats! :fireworks: You finally generated your own Documentation Site! Visit t
 
     If you want to become a contributor and be part of the project follow this guide.
 
-    [:octicons-arrow-right-24: Visit the guide](nav-datos-hogar)
+    [:octicons-arrow-right-24: Visit the guide](dev-guide/contribute/)
 
 </div>
 

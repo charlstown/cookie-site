@@ -8,7 +8,7 @@ hide:
 
 ## :material-rocket-launch-outline: Our mission
 
-Welcome to the ultimate destination for all things! Our website is a veritable treasure trove of amazing content, from cutting-edge technology to mind-blowing science to jaw-dropping pop culture. We've got everything you need to satisfy your thirst for knowledge, adventure, and entertainment. Our modern and sleek design is fully responsive and mobile-friendly, making it easy to access our content from anywhere in the world. And with the latest web technologies and cross-platform support, you can be sure that our site is fast, reliable, and accessible on all your devices. So come on in and explore our world of geeky wonders – we guarantee you won't be disappointed!
+Welcome to the ultimate destination for all things! This website is a veritable treasure trove of amazing content, from cutting-edge technology to mind-blowing science to jaw-dropping pop culture. We've got everything you need to satisfy your thirst for knowledge, adventure, and entertainment. Our modern and sleek design is fully responsive and mobile-friendly, making it easy to access our content from anywhere in the world. And with the latest web technologies and cross-platform support, you can be sure that our site is fast, reliable, and accessible on all your devices. So come on in and explore our world of geeky wonders – we guarantee you won't be disappointed!
 
 </br>
 
@@ -52,9 +52,8 @@ Welcome to the ultimate destination for all things! Our website is a veritable t
 
 <div class="grid row-2" markdown>
 
-- [:octicons-arrow-right-24: Getting started in Gluon](#)
-- [:octicons-arrow-right-24: Create a new team](#)
-- [:octicons-arrow-right-24: Add new components to your project](#)
-- [:octicons-arrow-right-24: I can't access Gluon with my user](#)
+- [:octicons-arrow-right-24: This is a link to a site](#)
+- [:octicons-arrow-right-24: This is a link to othersite](#)
+
 
 </div>
