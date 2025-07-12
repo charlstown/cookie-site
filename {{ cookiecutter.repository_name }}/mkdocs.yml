@@ -1,5 +1,5 @@
 site_name: {{ cookiecutter.project_name }}
-site_description: {{ cookiecutter.project_description }}
+site_description: "{{ cookiecutter.project_description }}"
 repo_url: {{ cookiecutter.repository_url }}
 site_author: {{ cookiecutter.author }}
 
